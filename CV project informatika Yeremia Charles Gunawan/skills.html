@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Projects - Charles Gunawan</title>
+    <!-- CDN for TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fitness-red': '#ef4444',
+                        'fitness-black': '#0a0a0a',
+                        'fitness-gray': '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-fitness-black text-white selection:bg-fitness-red selection:text-white">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full bg-fitness-black/80 backdrop-blur-lg z-50 border-b border-fitness-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-3xl font-black text-fitness-red tracking-tighter italic">
+                        CG<span class="text-white">.</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-10">
+                        <a href="index.html" class="hover:text-fitness-red text-sm font-bold uppercase tracking-widest transition-colors text-gray-400">Home</a>
+                        <a href="index.html#about" class="hover:text-fitness-red text-sm font-bold uppercase tracking-widest transition-colors text-gray-400">About Me</a>
+                        <a href="index.html#experience" class="hover:text-fitness-red text-sm font-bold uppercase tracking-widest transition-colors text-gray-400">Experience</a>
+                        <a href="#contact" class="hover:text-fitness-red text-sm font-bold uppercase tracking-widest transition-colors text-gray-400">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Button -->
+                <div class="md:hidden">
+                    <button class="text-gray-400 hover:text-white">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="pt-32">
+        <!-- Skills Section -->
+        <section id="skills" class="py-12 px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-16">
+                    <h2 class="text-5xl font-black mb-4 uppercase italic">Keahlian <span class="text-fitness-red">(Skills)</span></h2>
+                    <div class="h-2 w-32 bg-fitness-red mb-8"></div>
+                    <p class="text-xl text-gray-400 max-w-2xl">
+                        Fokus utama saya dalam menjaga performa fisik dan disiplin harian.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Skill Cards -->
+                    <div class="bg-fitness-gray/20 p-8 rounded-2xl border border-fitness-gray hover:border-fitness-red/50 transition-all group">
+                        <div class="text-fitness-red mb-6">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Strength Training</h3>
+                        <p class="text-gray-400 leading-relaxed">Fokus pada latihan beban untuk membangun massa otot, kekuatan inti, dan stabilitas tubuh.</p>
+                    </div>
+
+                    <div class="bg-fitness-gray/20 p-8 rounded-2xl border border-fitness-gray hover:border-fitness-red/50 transition-all group">
+                        <div class="text-fitness-red mb-6">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Cardio Endurance</h3>
+                        <p class="text-gray-400 leading-relaxed">Meningkatkan kesehatan jantung dan stamina melalui lari, bersepeda, atau latihan intensitas tinggi.</p>
+                    </div>
+
+                    <div class="bg-fitness-gray/20 p-8 rounded-2xl border border-fitness-gray hover:border-fitness-red/50 transition-all group">
+                        <div class="text-fitness-red mb-6">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Discipline & Consistency</h3>
+                        <p class="text-gray-400 leading-relaxed">Kemampuan untuk tetap pada jadwal latihan dan pola hidup sehat dalam jangka panjang.</p>
+                    </div>
+
+                    <div class="bg-fitness-gray/20 p-8 rounded-2xl border border-fitness-gray hover:border-fitness-red/50 transition-all group">
+                        <div class="text-fitness-red mb-6">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Nutrition & Recovery</h3>
+                        <p class="text-gray-400 leading-relaxed">Pemahaman tentang asupan nutrisi yang tepat dan pentingnya istirahat untuk pemulihan optimal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 bg-fitness-gray/10 px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-16 text-right">
+                    <h2 class="text-5xl font-black mb-4 uppercase italic">Proyek <span class="text-fitness-red">(Projects)</span></h2>
+                    <div class="h-2 w-32 bg-fitness-red ml-auto mb-8"></div>
+                    <p class="text-xl text-gray-400 max-w-2xl ml-auto">
+                        Inisiatif dan tantangan yang saya jalani untuk menginspirasi diri sendiri dan orang lain.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-12">
+                    <!-- Project Cards -->
+                    <div class="group relative overflow-hidden rounded-3xl bg-fitness-gray">
+                        <div class="aspect-video bg-neutral-800 flex items-center justify-center overflow-hidden">
+                            <div class="text-6xl group-hover:scale-110 transition-transform duration-500">🔥</div>
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-2xl font-bold">30-Day Fitness Challenge</h3>
+                                <span class="text-fitness-red font-black">2026</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Menyelesaikan tantangan latihan intensif selama 30 hari tanpa absen untuk menguji disiplin mental.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-3xl bg-fitness-gray">
+                        <div class="aspect-video bg-neutral-800 flex items-center justify-center overflow-hidden">
+                            <div class="text-6xl group-hover:scale-110 transition-transform duration-500">📝</div>
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-2xl font-bold">Personal Workout Log</h3>
+                                <span class="text-fitness-red font-black">Ongoing</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Dokumentasi perjalanan latihan harian, catatan beban, dan transformasi fisik secara berkala.</p>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-3xl bg-fitness-gray">
+                        <div class="aspect-video bg-neutral-800 flex items-center justify-center overflow-hidden">
+                            <div class="text-6xl group-hover:scale-110 transition-transform duration-500">🌟</div>
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <div class="flex justify-between items-start">
+                                <h3 class="text-2xl font-bold">Healthy Lifestyle Campaign</h3>
+                                <span class="text-fitness-red font-black">Active</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Berbagi tips kesehatan dan motivasi olahraga melalui platform sosial untuk membangun komunitas sehat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center py-12">
+            <a href="index.html" class="text-fitness-red hover:text-white font-bold transition-colors uppercase tracking-widest text-sm flex items-center justify-center space-x-2 group">
+                <svg class="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path></svg>
+                <span>Kembali ke Home</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-neutral-950 py-20 border-t border-fitness-gray mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-black uppercase italic leading-tight">
+                        Waktunya <span class="text-fitness-red">Berubah</span> Sekarang.
+                    </h2>
+                    <p class="text-gray-400 text-lg max-w-md">
+                        Siap untuk memulai perjalanan kebugaran Anda? Hubungi saya untuk diskusi atau kolaborasi lebih lanjut.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="space-y-2">
+                        <p class="text-xs font-bold text-fitness-red uppercase tracking-widest">Email Saya</p>
+                        <a href="mailto:gunawncarles50@email.com" class="text-xl font-bold hover:text-fitness-red transition-colors block">
+                            gunawncarles50@email.com
+                        </a>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-xs font-bold text-fitness-red uppercase tracking-widest">Instagram</p>
+                        <a href="https://instagram.com/charles__gunawan" target="_blank" class="text-xl font-bold hover:text-fitness-red transition-colors block">
+                            @ charles__gunawan
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-20 pt-10 border-t border-fitness-gray flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-3xl font-black italic text-gray-800">CG.</div>
+                <p class="text-gray-600 text-sm font-medium">
+                    © 2026 Charles Gunawan | Train Hard, Stay Strong 🔥
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
