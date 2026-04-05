@@ -44,7 +44,7 @@ Melalui olahraga, saya belajar tentang kerja keras, komitmen, dan bagaimana menj
 
 Jika ingin berdiskusi, kolaborasi, atau sekadar sharing tentang fitness:
 
-* 📧 Email: [carlesgunawan@email.com](mailto:carlesgunawan@email.com)
+* 📧 Email: [carlesgunawan@email.com](mailto:gunawancarles50@@email.com)
 * 📱 Instagram: @carlesgunawan
 
 ---
